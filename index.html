@@ -5,46 +5,37 @@
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
-  > <!-- displays site properly based on user's device -->
-
   <link
     rel="icon"
     type="image/png"
     sizes="32x32"
     href="./assets/images/favicon-32x32.png"
   >
-
   <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 0.6875rem;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <link
+    rel="stylesheet"
+    href="./styles/style.css"
+  >
 </head>
 <body>
 <main>
   <div class="card">
-    <img
-      class="card__image"
-      src="./assets/images/illustration-article.svg"
-      alt="Article illustration: abstract shapes and code symbols"
-      width="336"
-      height="200"
-      loading="lazy"
-    />
+    <div class="card__image-wrapper">
+      <img
+        class="card__image"
+        src="./assets/images/illustration-article.svg"
+        alt="Article illustration: abstract shapes and code symbols"
+        width="336"
+        height="200"
+        loading="lazy"
+      />
+    </div>
     <div class="card__body">
-      <span class="card__tag">Learning</span>
-      <p class="card__date">Published
+      <span class="card__tag text-preset-3 text-preset-3--bold">Learning</span>
+      <p class="card__date text-preset-3">Published
         <time datetime="2023-12-21">21 Dec 2023</time>
       </p>
-      <h1 class="card__title">
+      <h1 class="card__title text-preset-1">
         <a
           class="card__link"
           href="#"
@@ -52,7 +43,7 @@
           HTML & CSS foundations
         </a>
       </h1>
-      <p class="card__description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <p class="card__description text-preset-2">These languages are the backbone of every website, defining structure, content, and presentation.</p>
     </div>
     <footer class="card__footer">
       <img
@@ -63,7 +54,7 @@
         height="32"
         loading="lazy"
       />
-      <span class="card__author-name">Greg Hooper</span>
+      <span class="card__author-name text-preset-3 text-preset-3--bold">Greg Hooper</span>
     </footer>
   </div>
 </main>

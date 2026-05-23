@@ -1,0 +1,135 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-yellow: #F4D04E;
+  --color-gray-950: #111111;
+  --color-gray-500: #6B6B6B;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  color: var(--color-gray-950);
+  background-color: var(--color-yellow);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-inline: 15px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.text-preset-1 {
+  font-weight: 800;
+  font-size: clamp(1.25rem, 1.162rem + 0.376vw, 1.5rem);
+  line-height: 1.5;
+}
+
+.text-preset-2 {
+  font-weight: 500;
+  font-size: clamp(0.875rem, 0.831rem + 0.188vw, 1rem);
+  line-height: 1.5;
+}
+
+.text-preset-3 {
+  font-weight: 500;
+  font-size: clamp(0.75rem, 0.706rem + 0.188vw, 0.875rem);
+  line-height: 1.5;
+}
+
+.text-preset-3--bold {
+  font-weight: 800;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  max-width: 384px;
+  width: 100%;
+  padding: 24px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-950);
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 0 #000;
+}
+
+.card__image-wrapper {
+  max-width: 336px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 12px;
+}
+
+.card__tag {
+  padding: 4px 12px;
+  border-radius: 4px;
+  background-color: var(--color-yellow);
+}
+
+.card__link {
+  transition-duration: 0.2s;
+}
+
+.card__description {
+  color: var(--color-gray-500);
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.card__author-avatar {
+  width: 32px;
+  height: 32px;
+}
+
+@media (hover: hover) {
+  .card__link:hover {
+    color: var(--color-yellow);
+  }
+}
+
+:focus-visible {
+  outline: 2px dashed var(--color-gray-950);
+  outline-offset: 5px;
+  transition-duration: 0s !important;
+}
+
